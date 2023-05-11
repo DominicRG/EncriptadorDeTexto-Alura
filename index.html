@@ -22,37 +22,41 @@
 
     <main>
 
-        <section class="section1">
-            <div class="container-campo-encriptado">
-                <textarea name="campo-encriptado" cols="30" rows="10">Ingrese el texto aqui</textarea>
-            </div>
-            <div class="container-advertencia">
-                <img class="imagen-advertencia" src="media/exclamation.png" alt="exclamation">
-                <p class="advertencia">Solo letras mínusculas y sin acentos</p>
-            </div>
-            <div class="container-buttons">
-                <button class="boton-encriptar">Encriptar</button>
-                <button class="boton-desencriptar">Desencriptar</button>
-            </div>
-        </section>
-
-        <section class="section2">
-            <div class="container-section2">
-                <div class="container-parrafo-resultado">
-                    <p class="text-resultado">Aquí ira el resultado</p>
+        <div class="container-section">
+            <section class="section1">
+                <div class="container-campo-encriptado">
+                    <textarea class="caja-texto" name="campo-encriptado" id="campo-encriptado" cols="30" rows="10"></textarea>
+                    <label for="campo-encriptado" class="label-caja-texto">Ingrese el texto aquí</label>
                 </div>
-                <div class="container-imagen-muñeco">
-                    <img src="media/Muñeco.png" alt="Muñeco">
+                <div class="container-advertencia">
+                    <img class="imagen-advertencia" src="media/exclamation.png" alt="exclamation">
+                    <p class="advertencia">Solo letras mínusculas y sin acentos</p>
                 </div>
-                <h2 class="msj-no-encontrado">Ningun mensaje fue encontrado</h2>
-                <div class="container-parrafo">
-                    <p>Ingresa el texto que desees encriptar o desencriptar</p> 
+                <div class="container-buttons">
+                    <button class="button boton-encriptar">Encriptar</button>
+                    <button class="button boton-desencriptar">Desencriptar</button>
                 </div>
-                <div class="container-copiar">
-                    <button class="boton-copiar">Copiar</button>
-                </div>  
-            </div>
-        </section>
+            </section>
+    
+            <section class="section2">
+                <div class="container-section2">
+                    <div class="container-parrafo-resultado">
+                        <p class="text-resultado">Aquí ira el resultado</p>
+                    </div>
+                    <div class="container-imagen-muñeco">
+                        <img src="media/Muñeco.png" alt="Muñeco">
+                    </div>
+                    <h2 class="msj-no-encontrado">Ningun mensaje fue encontrado</h2>
+                    <div class="container-parrafo">
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p> 
+                    </div>
+                    <div class="container-copiar">
+                        <button class="boton-copiar">Copiar</button>
+                    </div>  
+                </div>
+            </section>
+        </div>
+        
     </main>
 
     <footer>

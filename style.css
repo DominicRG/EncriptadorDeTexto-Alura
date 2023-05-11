@@ -4,3 +4,116 @@ body{
     background-color: #F3F5FC;
 }
 
+header{
+    width: 100%;
+    height: 100px;
+}
+
+button{
+    padding: 1em 1em;
+    background-color: #0A3871;
+    border-radius: 0.5em;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5;
+    background: #e8e8e8
+}
+
+.imagen-logo-h1{
+    width: 120px;
+    height: 48px;
+    margin: 1.5em 0 0 1.5em;
+}
+
+.container-section{
+    width: 80%;
+    height: 75vh;
+    margin: 0 auto;
+    background-color: green;
+    display: grid;
+    column-gap: 10%;
+}
+
+.section1{
+    background-color: orange;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-campo-encriptado{
+    width: 100%;
+    height: 80%;
+}
+
+.caja-texto{
+    width: 100%;
+    height: 95%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid #e1e5ee;
+    resize: none;
+    outline: none;
+    color: #0a3871;
+    font-weight: 600;
+    background: white;
+    box-sizing: border-box;
+}
+
+.label-caja-texto{
+    position: absolute;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-left: 0.2em;
+    left: 10%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1em;
+    color: #888484;
+    font-weight: 600;
+    background-color: #ffffff;
+    cursor: text;
+}
+
+.container-advertencia{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+
+.advertencia{
+    margin-left: 0.5em;
+}
+
+.container-buttons{
+    height: 10%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+}
+
+.section2{
+    background-color: violet;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.container-section2{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 6px 6px 12px #c5c5c5;
+    text-align: center;
+}
+
+/*Ocultar elementos al dar respuesta*/
+.ocultar{
+    display: none;
+}
