@@ -15,7 +15,8 @@ button{
     border-radius: 0.5em;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5;
-    background: #e8e8e8
+    background: #e8e8e8;
+    cursor: pointer;
 }
 
 .imagen-logo-h1{
@@ -24,17 +25,17 @@ button{
     margin: 1.5em 0 0 1.5em;
 }
 
+/*Contenedor de ambas secciones a trabajar*/
 .container-section{
     width: 80%;
     height: 75vh;
     margin: 0 auto;
-    background-color: green;
     display: grid;
     column-gap: 10%;
 }
 
+/*Section1 y todo su contenido - Desktop*/
 .section1{
-    background-color: orange;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -75,7 +76,6 @@ button{
 }
 
 .container-advertencia{
-    background-color: green;
     display: flex;
     align-items: center;
     height: 10%;
@@ -96,24 +96,45 @@ button{
     background-color: #0A3871;
 }
 
+/*Section2 y todo su contenido - Desktop*/
 .section2{
     background-color: violet;
     grid-column-start: 3;
     grid-column-end: 4;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 12px #c5c5c5;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .container-section2{
-    background-color: #ffffff;
     width: 100%;
-    height: 100%;
+    height: 75%;
     box-sizing: border-box;
-    border-radius: 1em;
     padding: 1em;
-    box-shadow: 6px 6px 12px #c5c5c5;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*Ocultar elementos al dar respuesta*/
 .ocultar{
     display: none;
+}
+
+.container-imagen-muñeco img{
+    width: 100%;
+    max-width: 336px;
+}
+
+.msj-no-encontrado{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.container-parrafo p{
+    font-size: 0.9em;
+    margin-top: 1em;
 }
