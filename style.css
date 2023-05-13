@@ -83,11 +83,26 @@ button:hover{
     resize: none;
     outline: none;
     color: #0a3871;
-    font-weight: 600;
+    font-weight: 400;
     background: white;
     box-sizing: border-box;
+    transition: all .5s;
 }
 
+.caja-texto:focus{
+    border-color: #0A3871;
+}
+
+.caja-texto:hover{
+    border-color: #0A3871;
+}
+
+.caja-texto::placeholder{
+    color: #888484;
+    font-size: 1em;
+    font-weight: 300;
+}
+/*
 .label-caja-texto{
     position: absolute;
     padding-top: 1em;
@@ -101,7 +116,7 @@ button:hover{
     font-weight: 600;
     background-color: #ffffff;
     cursor: text;
-}
+}*/
 
 .container-advertencia{
     display: flex;
