@@ -43,6 +43,13 @@ button:hover{
 .imagen-logo-h1{
     width: 120px;
     height: 48px;
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: all .5s;
+}
+
+.imagen-logo-h1:hover{
+    transform: scale(0.8);
 }
 
 /*Contenedor de ambas secciones a trabajar*/
