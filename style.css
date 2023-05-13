@@ -6,7 +6,7 @@ body{
 
 header{
     width: 100%;
-    height: 100px;
+    height: 10vh;
 }
 
 button{
@@ -137,4 +137,44 @@ button{
 .container-parrafo p{
     font-size: 0.9em;
     margin-top: 1em;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 15vh;
+}
+
+.container-redes{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-redes{
+    min-width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-redes a i{
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #0A3871;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.button-redes a i:hover{
+    transform: scale(1.2);
 }
