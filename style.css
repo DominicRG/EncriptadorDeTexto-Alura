@@ -232,6 +232,27 @@ button:hover{
     margin-top: 1em;
 }
 
+.container-parrafo-resultado{
+    width: 100%;
+    height: 70%;
+}
+
+.text-resultado{
+    font-size: 1.2em;
+    word-break: break-all;
+    max-height: 95%;
+    overflow: auto;
+}
+
+.container-copiar{
+    display: grid;
+    width: 100%;
+}
+
+.container-copiar button{
+    height: 2em;
+}
+
 /*Footer*/
 footer{
     width: 100%;
