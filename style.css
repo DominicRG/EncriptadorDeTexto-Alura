@@ -238,9 +238,11 @@ button:hover{
 }
 
 .text-resultado{
+    width: 100%;
+    text-align:justify ;
     font-size: 1.2em;
     word-break: break-all;
-    max-height: 95%;
+    height: 100%;
     overflow: auto;
 }
 

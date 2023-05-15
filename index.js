@@ -23,6 +23,7 @@ function encriptar(){
         //Mostrando-CamposDeResultado
         contenedorParrafoResultado.classList.remove('ocultar');
         contenedorCopiar.classList.remove('ocultar');
+        botonCopiar.classList.remove('ocultar');
         
         var textoEncriptado = '';
         let obj_letters = {
@@ -52,6 +53,7 @@ function desencriptar(){
         //Mostrando-CamposDeResultado
         contenedorParrafoResultado.classList.remove('ocultar');
         contenedorCopiar.classList.remove('ocultar');
+        botonCopiar.classList.remove('ocultar');
         
         var textoDesEncriptado = '';
         let obj_letters = {
@@ -85,6 +87,16 @@ cajaTexto.addEventListener('input', function(){
     textInput = textInput.toLowerCase().replace(/[^a-zñ\s]/g, '');
     cajaTexto.value = textInput;
 })
+
+//Ocultar elementos iniciles del section2
+function ocultarIni(){
+    contenedorParrafoResultado.classList.add('ocultar');
+    contenedorCopiar.classList.add('ocultar');
+    botonCopiar.classList.add('ocultar');
+}
+
+//Aplicar el ocultar al cargar la pagina
+window.addEventListener('load', ocultarIni);
 
 //Añadir funciones a los botones
 botonEncriptar.addEventListener('click', encriptar);
