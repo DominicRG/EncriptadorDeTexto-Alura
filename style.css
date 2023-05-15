@@ -15,11 +15,71 @@ header{
     height: 10vh;
     box-sizing: border-box;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.imagen-logo{
+    cursor: pointer;
+    transition: all .5s;
+    
+}
+
+.imagen-logo:hover{
+    transform: scale(0.8);
+}
+
+.text-titulo{
+    font-size: 1.8em;
+    color: #41667e;
+    font-weight: bold;
+}
+
+.switch{
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider::before{
+    position: absolute;
+    content: '';
+    height: var(--size-of-icon, 1.4em);
+    width: var(--size-of-icon, 1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: 0.4s;
 }
 
 /*Codigo para los botones*/
 button{
-    padding: 1em 1em;
+    padding: 0 1em;
     background-color: #e8e8e8;
     color: #000000;
     border: 1px solid #0A3871;
@@ -29,6 +89,7 @@ button{
     box-sizing: border-box;
     font-size: 1.1em;
     transition: .5s;
+    min-width: min-content;
 }
 
 button:hover{
@@ -38,18 +99,6 @@ button:hover{
     color: #f1f1f1;
     border: 1px solid #e1e5ee;
     text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-}
-
-.imagen-logo-h1{
-    width: 120px;
-    height: 48px;
-    cursor: pointer;
-    transform: scale(0.7);
-    transition: all .5s;
-}
-
-.imagen-logo-h1:hover{
-    transform: scale(0.8);
 }
 
 /*Contenedor de ambas secciones a trabajar*/
