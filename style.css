@@ -33,6 +33,7 @@ header{
     font-size: 1.8em;
     color: #41667e;
     font-weight: bold;
+    animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .switch{
@@ -277,6 +278,10 @@ footer{
     justify-content: space-around;
 }
 
+.button-redes a{
+    animation: rotate-in-bottom .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .button-redes a i{
     text-decoration: none;
     font-size: 1.5em;
@@ -294,3 +299,72 @@ footer{
 .button-redes a i:hover{
     transform: scale(1.2);
 }
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  /**
+ * ----------------------------------------
+ * animation rotate-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-in-bottom {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-bottom {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 1;
+    }
+  }
+  
