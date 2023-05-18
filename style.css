@@ -108,6 +108,8 @@ button:hover{
     height: 75vh;
     margin: 0 auto;
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
     column-gap: 10%;
 }
 
@@ -192,7 +194,6 @@ button:hover{
 
 /*Section2 y todo su contenido - Desktop*/
 .section2{
-    background-color: violet;
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #ffffff;

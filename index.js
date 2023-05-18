@@ -96,7 +96,8 @@ function ocultarIni(){
 }
 
 //Aplicar el ocultar al cargar la pagina
-window.addEventListener('load', ocultarIni);
+//window.addEventListener('load', ocultarIni);
+document.addEventListener('DOMContentLoaded', ocultarIni);
 
 //Añadir funciones a los botones
 botonEncriptar.addEventListener('click', encriptar);
