@@ -7,6 +7,8 @@
     <title>Encriptador</title>
     <!-- Font Awesome es una biblioteca de iconos vectoriales de código abierto y gratuita -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <!--Estilos CSS-->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -15,11 +17,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light">
     <header>
         <a class="a-logo" href="https://app.aluracursos.com/dashboard" target="_blank"><img class="imagen-logo" src="media/Logo (1).png" alt="Logo de la pagina"></a>
         <h1 class="text-titulo">Encriptador</h1>
-        <label for="" class="switch"><input type="checkbox"><span class="slider"></span></label>
+
+        <input name="toggle" type="checkbox" id="toggle">
+
+        <label class="toggle" for="toggle">
+            <i class="bx bxs-sun"></i>
+            <i class="bx bx-moon"></i>
+            <span class="ball"></span>
+        </label>
     </header>
 
     <main>

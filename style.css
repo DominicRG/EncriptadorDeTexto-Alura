@@ -5,8 +5,8 @@ html{
 body{
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    background-color: #F3F5FC;
     height: 100vh;
+    transition: .2s;
 }
 
 header{
@@ -22,7 +22,6 @@ header{
 .imagen-logo{
     cursor: pointer;
     transition: all .5s;
-    
 }
 
 .imagen-logo:hover{
@@ -30,55 +29,69 @@ header{
 }
 
 .text-titulo{
-    font-size: 1.8em;
+    font-size: 2em;
     color: #41667e;
     font-weight: bold;
     animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.switch{
-    opacity: 0;
-    /*
-    display: block;
-    --width-of-switch: 3.5em;
-    --height-of-switch: 2em;
-    --size-of-icon: 1.4em;
-    --slider-offset: 0.3em;
-    position: relative;
-    width: var(--width-of-switch);
-    height: var(--height-of-switch);*/
-}
-/*
-.switch input{
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider{
-    position: absolute;
+/*Estilos del boton DarkMode*/
+.toggle {
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    transition: 0.4s;
-    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    transition: .2s;
 }
 
-.slider::before{
+.toggle i {
+    width: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.toggle .ball {
     position: absolute;
-    content: '';
-    height: var(--size-of-icon, 1.4em);
-    width: var(--size-of-icon, 1.4em);
-    border-radius: 20px;
-    left: var(--slider-offset, 0.3em);
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
-    transition: 0.4s;
-}*/
+    width: 35px;
+    height: 35px;
+    margin: 7.5px;
+    border-radius: 50%;
+    transition: .3s ease-out;
+}
+
+input {
+    display: none;
+}
+
+/* Light mode para el boton*/
+
+.light {
+    background: #A5D7E8;
+}
+
+.light .toggle {
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6,
+                -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background: #151d2a;
+}
+
 
 /*Codigo para los botones*/
 button{
@@ -434,4 +447,51 @@ footer{
     }
   }
   
-  
+
+/*
+    -- Dark Mode --
+*/
+
+.dark {
+    background: #151d2a;
+}
+
+.dark .toggle {
+    background: #151d2a;
+    box-shadow: 3px 3px 3px #0e131b,
+                -3px -3px 3px #1c2739;
+}
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(50px);
+}
+
+.dark .text-titulo{
+    color: #F1F6F9;
+}
+
+.dark .button-redes a i {
+    background-color: #F1F6F9;
+    color: #212A3E;
+}
+
+.dark .imagen-logo{
+    content: url(media/LogoDark.png);
+}
+
+.dark .imagen-advertencia{
+    content: url(media/exclamationDark.png);
+}
+
+.dark .advertencia{
+    color: #9BA4B5;
+}
