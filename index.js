@@ -40,6 +40,7 @@ function encriptar(){
         textoEncriptado = texto.replace( /a|e|i|o|u/g, function(matched){return obj_letters[matched]});
         console.log(textoEncriptado);
         textoResultado.textContent = textoEncriptado;
+        viewSection2();
     }
 }
 
@@ -72,6 +73,7 @@ function desencriptar(){
         textoDesEncriptado = texto.replace( /ai|enter|imes|ober|ufat/g, function(matched){return obj_letters[matched]});
         console.log(textoDesEncriptado);
         textoResultado.textContent = textoDesEncriptado;
+        viewSection2();
     }
 }
 //Funcion CopiarEncriptado
@@ -139,6 +141,14 @@ botonEncriptar.addEventListener('click', encriptar);
 botonDesencriptar.addEventListener('click', desencriptar);
 botonCopiar.addEventListener('click', copiarEncriptado);
 
+
+//Funcion para desplazar a vista de section2 
+function viewSection2(){
+    let objClienteReact = contenedorSection2.getBoundingClientRect();
+    let y = objClienteReact.top;
+    let x = objClienteReact.left;
+    window.scroll(x, y);
+}
 
 //DarkMode
 const body = document.querySelector("body");
