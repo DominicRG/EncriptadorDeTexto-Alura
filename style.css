@@ -485,11 +485,11 @@ footer{
 }
 
 .dark .imagen-logo{
-    content: url(media/LogoDark.png);
+    content: url(./media/LogoDark.png);
 }
 
 .dark .imagen-advertencia{
-    content: url(media/exclamationDark.png);
+    content: url(./media/exclamationDark.png);
 }
 
 .dark .advertencia{
