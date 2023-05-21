@@ -89,7 +89,8 @@ function copiarEncriptado(){
 cajaTexto.addEventListener('input', function(){
     let textInput = cajaTexto.value;
     //Convertir a minuscula y restringir uso de caracteres especiales y tildes(acentos)
-    textInput = textInput.toLowerCase().replace(/[^a-zñ\s]/g, '');
+    ///[^a-zñ\s]/g expresión regular considerando la 'ñ'
+    textInput = textInput.toLowerCase().replace(/[^a-z\s]/g, '');
     cajaTexto.value = textInput;
 })
 
