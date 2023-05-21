@@ -495,3 +495,54 @@ footer{
 .dark .advertencia{
     color: #9BA4B5;
 }
+
+/* CSS Mobile */
+@media screen and (max-width:480px){
+
+    header{
+        padding: 0 0;
+    }
+    
+    .imagen-logo{
+        cursor: default;
+        transform: scale(0.6);
+        transition: none;
+    }
+    
+    .imagen-logo:hover{
+        transform: scale(0.6);
+    }
+
+    .toggle{
+        transform: scale(0.85);
+    }
+
+    .container-section{
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin-top: 1%;
+        box-sizing: border-box;
+    }
+
+    .section1, .section2{
+        margin-bottom: 1em;
+    }
+
+    .section2{
+        height: 30rem;
+    }
+
+    .container-advertencia{
+        margin: 1em 0 1em 0;
+    }
+
+    .button{
+        height: 2em;
+    }
+
+    .button-redes a{
+        margin: 1% 1%;
+    }
+
+}
