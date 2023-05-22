@@ -40,7 +40,8 @@ function encriptar(){
         textoEncriptado = texto.replace( /a|e|i|o|u/g, function(matched){return obj_letters[matched]});
         console.log(textoEncriptado);
         textoResultado.textContent = textoEncriptado;
-        viewSection2();
+        //viewSection2();
+        scrollSuave('.container-section2', 500, 0);
     }
 }
 
@@ -73,7 +74,8 @@ function desencriptar(){
         textoDesEncriptado = texto.replace( /ai|enter|imes|ober|ufat/g, function(matched){return obj_letters[matched]});
         console.log(textoDesEncriptado);
         textoResultado.textContent = textoDesEncriptado;
-        viewSection2();
+        //viewSection2();
+        scrollSuave('.container-section2', 500, 0);
     }
 }
 //Funcion CopiarEncriptado
@@ -142,12 +144,35 @@ botonDesencriptar.addEventListener('click', desencriptar);
 botonCopiar.addEventListener('click', copiarEncriptado);
 
 
-//Funcion para desplazar a vista de section2 
-function viewSection2(){
+//Funciones para desplazar a vista de section2 
+/*function viewSection2(){
     let objClienteReact = contenedorSection2.getBoundingClientRect();
     let y = objClienteReact.top;
     let x = objClienteReact.left;
     window.scroll(x, y);
+}*/
+
+const scrollSuave = (objetivo, duracion, compensacion) => {
+    let elemObj = document.querySelector(objetivo)
+    let elemPos = elemObj.getBoundingClientRect().top - compensacion
+    let posInicial = window.pageYOffset
+    let tiempoInicial = null
+    
+    const animacion = tiempoAhora => {
+        if (tiempoInicial === null) tiempoInicial = tiempoAhora
+        tiempoPasado = tiempoAhora - tiempoInicial
+        let auxAnimacion = easeInOutQuad(tiempoPasado, posInicial, elemPos, duracion)
+        window.scrollTo(0, auxAnimacion)
+        if (tiempoPasado < duracion) requestAnimationFrame(animacion)
+    }
+    requestAnimationFrame(animacion)
+}
+    
+const easeInOutQuad = (t, b, c, d) => {
+    t /= d / 2
+    if (t < 1) return c / 2 * t * t + b
+    t--
+    return - c / 2 * (t * (t - 2) - 1) + b
 }
 
 //DarkMode
