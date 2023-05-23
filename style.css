@@ -627,7 +627,7 @@ footer{
     
     .imagen-logo{
         cursor: default;
-        transform: scale(0.6);
+        transform: scale(1);
         transition: none;
     }
     
@@ -635,8 +635,66 @@ footer{
         transform: scale(0.6);
     }
 
+    .text-titulo{
+        font-size: 2.5em;
+    }
+
     .toggle{
-        transform: scale(0.85);
+        transform: scale(1);
+    }
+
+    .container-section{
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin-top: 1%;
+        box-sizing: border-box;
+    }
+
+    .section1, .section2{
+        margin-bottom: 1em;
+    }
+
+    .section2{
+        height: 30rem;
+    }
+
+    .container-advertencia{
+        margin: 1em 0 1em 0;
+    }
+
+    .button{
+        height: 2em;
+    }
+
+    .button-redes a{
+        margin: 1% 1%;
+    }
+}
+
+/*CSS Monitor Vertical o TabletLarga*/
+@media screen and (max-width: 1200px) and (min-height: 1024px){
+    header{
+        padding: 0 0;
+        justify-content: space-around;
+    }
+    
+    .imagen-logo{
+        cursor: default;
+        transform: scale(1);
+        transition: none;
+    }
+    
+    .imagen-logo:hover{
+        transform: scale(0.6);
+    }
+
+    .text-titulo{
+        font-size: 3em;
+    }
+
+    .toggle{
+        transform: scale(1);
     }
 
     .container-section{
